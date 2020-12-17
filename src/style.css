@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+    display: flex;
+}
+
+/* Design nav */
+nav{
+    min-width: 200px;
+    width: 20%;
+    max-width: 600px;
+    border-right: 3px solid #222;
+}
+
+nav header{
+    color: crimson;
+    font-size: 25px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+nav ul{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+nav ul li{
+    list-style: none;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid crimson;
+}
+
+ul li{
+    list-style-position: inside;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(243, 6, 6);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+nav ul li a:hover{
+    transform: scale(1.05);
+    color: crimson;
+}
+
+/* End design nav */
+
+/* design main */
+
+main{
+    padding: 30px;
+}
+
+main header{
+    color: crimson;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+article{
+    color: tan;
+}
+
+article p{
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+article ul{
+    margin: 20px 0px;
+}
+
+p,article ul{
+    font-size: 18px;
+    font-variant: small-caps;
+}
+
+h2{
+    color: crimson;
+    margin: 20px 0px;
+}
+
+
+code{
+    display: block;
+    width: 90%;
+    padding: 30px;
+    background-color: #111;
+    margin: 20px 0px;
+    color: rgb(173, 160, 160);
+    line-height: 25px;
+    border-radius: 5px;
+}
+
+/* End design main */
+
+/* Media query for 300 width screen */
+
+@media screen and (max-width: 300px){
+    /* Design nav */
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    /* End design nav */
+
+    /* Design main */
+    main{
+        padding: 10px;
+        width: 100%;
+    }
+
+    article{
+        width: 100%;
+    }
+
+    p{
+        width: 100%;
+    }
+    code{
+        word-wrap: break-word;
+        padding: 10px;
+    }
+    /* End Design main */
+} 

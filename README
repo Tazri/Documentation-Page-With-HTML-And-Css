@@ -1,0 +1,13 @@
+This site create for free code camp responsive wevsite task
+
+
+Requirment for this site from free code camp
+
+1 >>> <main> element with "main-doc" id inside "main-doc"
+            >at least five <section> element with "main-section" class name.
+            >first element of "main-section" element should be <header> element.
+            >every header element should id which match what contain header element
+
+2 >>> <nav> element should be see left 
+
+3 >>> at least one media query here in this project
